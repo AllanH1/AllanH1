@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset above */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  margin: 0 10%;
+}
+
+.experience,
+.skills {
+  border-bottom: solid 2px rgba(176, 196, 222, 0.4);
+  padding-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-size: 40px;
+  font-family: "Crimson Text", serif;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: rgb(65, 65, 65);
+  font-size: 60px;
+  font-family: "Railway", sans-serif;
+}
+
+h2 {
+  color: #008da3;
+  font-family: "Railway", sans-serif;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-family: "Railway", sans-serif;
+  font-size: 15px;
+  width: 80%;
+  margin-left: 10%;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.skills li,
+.experience li {
+  font-family: "Railway", sans-serif;
+  line-height: 20px;
+  list-style: initial;
+  margin: 25px;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.experience p,
+.education p {
+  margin-left: 0;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 300px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer li {
+  padding: 30px;
+  text-align: left;
+  margin-left: 16%;
+}
+
+footer li a {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  footer {
+    margin-top: 150px;
+  }
+}
