@@ -68,16 +68,16 @@
 
 .current,
 a:hover {
-  color: #369bac;
+  color: #3eb3c7;
 }
 
 .current {
-  border-left: solid 2px #369bac;
+  border-left: solid 2px #3eb3c7;
   padding-left: 5px;
 }
 
 li a::after {
-  border-bottom: solid #369bac 2px;
+  border-bottom: solid #3eb3c7 2px;
   content: "border";
   display: block;
   font-size: 0px;
@@ -100,7 +100,6 @@ li a:hover::after {
 
   nav {
     width: 100%;
-    color: rgba(0, 0, 0, 0.7);
     text-align: center;
     font-size: 15px;
     font-weight: bold;
@@ -111,8 +110,8 @@ li a:hover::after {
   #navigation {
     position: fixed;
     z-index: 1;
-    background-color: #e3e9f5;
-    color: #242e2d;
+    background-color: rgb(72, 72, 72);
+    color: white;
     top: 0;
     padding-bottom: 5px;
   }
@@ -125,13 +124,11 @@ li a:hover::after {
   }
 
   li a {
+    font-family: "Railway", sans-serif;
+    letter-spacing: 1px;
     display: inline-block;
     text-decoration: none;
     color: inherit;
-  }
-
-  .borderRight {
-    border-right: solid rgba(0, 0, 0, 0.3) 2px;
-    padding-right: 5%;
+    text-transform: uppercase;
   }
 }

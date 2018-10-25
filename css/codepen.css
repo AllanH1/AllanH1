@@ -233,7 +233,7 @@ h3 {
 
 .item:hover {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .item--codepen {
@@ -310,7 +310,7 @@ footer li a {
   .profile:hover {
     background-color: white;
     color: #008da3;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 
   footer {
