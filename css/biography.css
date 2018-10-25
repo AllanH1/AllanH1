@@ -178,14 +178,14 @@ h2 {
 
 h3 {
   border: none;
-  font-size: 25px;
+  font-size: 30px;
   padding: 0;
   margin-bottom: 50px;
   color: #008da3;
 }
 
 .story p {
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Railway", sans-serif;
   line-height: 2;
   text-align: justify;
@@ -232,6 +232,6 @@ footer li a {
 
 @media screen and (min-width: 1090px) {
   .story p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
