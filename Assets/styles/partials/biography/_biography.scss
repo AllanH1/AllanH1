@@ -28,3 +28,11 @@
     width: 80%;
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .biography {
+    &__title::after {
+      margin: 50px 0;
+    }
+  }
+}
