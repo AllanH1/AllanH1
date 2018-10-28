@@ -1,0 +1,44 @@
+// ==================
+// utility
+// ==================
+
+@mixin center {
+  margin: 0 auto;
+}
+
+// ==================
+// ::after
+// ==================
+@mixin bar_bottom_blue {
+  border-bottom: solid $border_blue 2px;
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+}
+
+@mixin bar_bottom_grey {
+  border-bottom: solid $border_grey 2px;
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+}
+
+@mixin bar_bottom_blue--closed {
+  height: 0px;
+  width: 0;
+}
+
+@mixin bar_bottom_blue--opened {
+  width: 100%;
+}
+
+// ==================
+// nav
+// ==================
+@mixin nav_item_current {
+  border-left: solid 2px $border_blue;
+  color: $nav_link_current;
+  padding-left: 5px;
+}

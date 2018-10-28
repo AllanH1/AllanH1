@@ -7,7 +7,7 @@
     <title>Allan Hernandez, Portfolio Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/nav.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Assets/styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
@@ -15,37 +15,39 @@
 <body>
 
     <header>
-        <a href="#navigation">
-            <svg class="open" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <a href="#nav-mobile">
+            <svg class="nav-mobile-hotcakes-icon nav-mobile-hotcakes-icon--open" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0z" fill="none" />
                 <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
             </svg>
         </a>
-        <nav id="navigation" aria-label="site">
-            <a href="#stay" id="stay">
-                <svg class="close" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <nav class="nav" id="nav-mobile" aria-label="site">
+            <a href="#nav-closed" id="nav-closed">
+                <svg class="nav-mobile-hotcakes-icon nav-mobile-hotcakes-icon--close" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                    viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none" />
                     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
                 </svg>
             </a>
-            <ul>
-                <li class="borderRight current">
-                    <a href="#">Home</a>
+            <ul class="nav__list">
+                <li>
+                    <a class="nav__list__item nav__list__item--current" href="#">Home</a>
                 </li>
                 <li>
-                    <a href="./biography.html">Biography</a>
+                    <a class="nav__list__item" href="./biography.html">Biography</a>
                 </li>
                 <li>
-                    <a href="./resume.html">Resume</a>
+                    <a class="nav__list__item" href="./resume.html">Resume</a>
                 </li>
                 <li>
-                    <a href="./codepen.html">Github/CodePen</a>
+                    <a class="nav__list__item" href="./codepen.html">Github/CodePen</a>
                 </li>
                 <li>
-                    <a href="./gallery.html">Gallery</a>
+                    <a class="nav__list__item" href="./gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="./contact.html">Contact</a>
+                    <a class="nav__list__item" href="./contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -127,16 +129,16 @@
         </section>
     </main>
 
-    <footer>
-        <ul>
+    <footer class="footer">
+        <ul class="footer__nav">
             <li>
-                <a href="https://www.roadtohire.org/">Learn more about Road to Hire</a>
+                <a class="footer__nav__item" href="https://www.roadtohire.org/">Learn more about Road to Hire</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/allan-hernandez-144b2b167/">My LinkedIn</a>
+                <a class="footer__nav__item" href="https://www.linkedin.com/in/allan-hernandez-144b2b167/">My LinkedIn</a>
             </li>
             <li>
-                <a href="./contact.html">Contact Me</a>
+                <a class="footer__nav__item" href="./contact.html">Contact Me</a>
             </li>
         </ul>
     </footer>

@@ -1,0 +1,120 @@
+.nav {
+  background-color: $nav-background-mobile;
+  color: $nav_text_color;
+  font-family: $nav_font;
+  font-size: 25px;
+  height: 100%;
+  opacity: 0;
+  padding-top: 65px;
+  position: fixed;
+  right: -100%;
+  text-transform: uppercase;
+  top: 0;
+  transition: 250ms;
+  width: 100%;
+  z-index: 7;
+
+  &__list {
+    &__item {
+      display: block;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 50px;
+      text-decoration: none;
+    }
+
+    &__item--current {
+      @include nav_item_current;
+    }
+
+    &__item::after {
+      @include bar_bottom_grey;
+      @include center;
+      margin-top: 15px;
+      max-width: 30%;
+      min-width: 234px;
+    }
+  }
+}
+
+// hotcakes icons
+// ==============
+.nav-mobile-hotcakes-icon {
+  right: 0;
+  position: fixed;
+  fill: $blue;
+}
+
+.nav-mobile-hotcakes-icon--open {
+  display: block;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.nav-mobile-hotcakes-icon--close {
+  display: none;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+// when .nav is targeted, open button will hide
+.nav:target .nav-mobile-hotcakes-icon--open {
+  display: none;
+}
+
+// when .nav is targeted, close button and .nav will show
+.nav:target .nav-mobile-hotcakes-icon--close {
+  display: block;
+}
+
+.nav:target {
+  opacity: 1;
+  right: 0;
+}
+
+@media screen and (min-width: $desktop) {
+  .nav-mobile-hotcakes-icon {
+    display: none;
+  }
+
+  .nav {
+    background-color: $nav-background-desktop;
+    height: 60px;
+    opacity: 1;
+    padding-top: 0px;
+    right: 0;
+
+    &__list {
+      @include center;
+      align-items: center;
+      display: flex;
+      height: 60px;
+      justify-content: space-between;
+      max-width: 1100px;
+
+      &__item {
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 0 5px;
+      }
+
+      &__item:hover {
+        color: $nav_link_hover;
+      }
+
+      &__item::after {
+        @include bar_bottom_blue--closed;
+        @include bar_bottom_blue;
+        margin-top: 0px;
+        max-width: 100%;
+        min-width: 0px;
+      }
+
+      &__item:hover::after {
+        @include bar_bottom_blue--opened;
+      }
+    }
+  }
+}

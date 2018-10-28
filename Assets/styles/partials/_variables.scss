@@ -1,0 +1,60 @@
+// ==================
+// media queries
+// ==================
+$desktop: 1025px;
+
+// ==================
+// colors
+// ==================
+$black_very-light-opacity: rgba(0, 0, 0, 0.9);
+
+$light-grey: rgb(228, 227, 227);
+
+$grey: rgb(128, 128, 128);
+
+$dark-grey: rgb(34, 34, 34);
+
+$blue: rgb(62, 179, 199);
+
+$white: rgb(255, 255, 255);
+
+$very_light_steelblue_heavy-opacity: rgba(176, 196, 222, 0.4);
+
+// usage
+// ==================
+
+// nav
+$nav_background_mobile: $black_very-light-opacity;
+
+$nav_background_desktop: $dark-grey;
+
+$nav_link_hover: $blue;
+
+$nav_link_current: $blue;
+
+$nav_text_color: $light-grey;
+
+// footer
+$footer_background: $dark-grey;
+
+$footer_text_color: $light-grey;
+
+$footer_link_hover: $blue;
+
+// border
+$border_blue: $blue;
+
+$border_grey: $grey;
+
+// ==================
+// fonts
+// ==================
+$sans-serif: "Railway", sans-serif;
+
+$serif: serif;
+
+// usage
+// ==================
+
+// nav
+$nav_font: $sans-serif;
