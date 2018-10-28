@@ -42,3 +42,58 @@
   color: $nav_link_current;
   padding-left: 5px;
 }
+
+// ==================
+// hero
+// ==================
+
+@mixin hero_setup {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+// ==================
+// text
+// ==================
+
+@mixin h1_text {
+  color: $title_light-grey;
+  font-family: $title-font;
+  font-size: 25px;
+}
+
+@mixin h2_text {
+  color: $title_dark-grey;
+  font-family: $title-font;
+  font-size: 35px;
+}
+
+@mixin body_text {
+  color: $body_dark-grey;
+  font-family: $body-font;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+// ==================
+// buttons
+// ==================
+
+@mixin button_dark-grey--add {
+  color: $title_light-grey;
+  background-color: $button_dark-grey;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+@mixin button--remove {
+  color: $title_dark-grey;
+  background-color: initial;
+  box-shadow: initial;
+  border-radius: initial;
+}

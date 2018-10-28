@@ -105,8 +105,8 @@
       }
 
       &__item::after {
-        @include bar_bottom_blue--closed;
         @include bar_bottom_blue;
+        @include bar_bottom_blue--closed;
         margin-top: 0px;
         max-width: 100%;
         min-width: 0px;

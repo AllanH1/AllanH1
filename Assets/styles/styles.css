@@ -71,7 +71,7 @@
   right: 0;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1100px) {
   .nav-mobile-hotcakes-icon {
     display: none;
   }
@@ -100,19 +100,133 @@
     color: #3eb3c7;
   }
   .nav__list__item::after {
-    height: 0px;
-    width: 0;
     border-bottom: solid #3eb3c7 2px;
     content: "";
     display: block;
     padding-top: 7px;
     transition: 0.2s;
+    height: 0px;
+    width: 0;
     margin-top: 0px;
     max-width: 100%;
     min-width: 0px;
   }
   .nav__list__item:hover::after {
     width: 100%;
+  }
+}
+.content__title {
+  color: #222222;
+  font-family: "Crimson Text", serif;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 60px;
+}
+.content__title::after {
+  border-bottom: solid #3eb3c7 2px;
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 50%;
+}
+.content__body {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 70%;
+}
+
+.content__left__body {
+  color: #222222;
+  font-family: "Railway", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.content__right__list {
+  text-align: center;
+  width: 100%;
+}
+.content__right__list__item-title {
+  margin: 0 auto;
+  color: #222222;
+  font-family: "Railway", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #e4e3e3;
+  background-color: #222222;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  display: inline-block;
+  margin: 15px auto;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  width: 200px;
+}
+.content__right__list__item-body {
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .main__wrapper {
+    display: flex;
+  }
+  .main__wrapper .content {
+    flex: 1;
+  }
+  .main__wrapper .content__body {
+    width: 90%;
+  }
+
+  .content__right__list {
+    text-align: left;
+    position: relative;
+    margin-left: 50px;
+  }
+  .content__right__list__item-title {
+    color: #222222;
+    background-color: initial;
+    box-shadow: initial;
+    border-radius: initial;
+    text-align: left;
+    margin: 0;
+    padding: 7px 30px;
+  }
+  .content__right__list__item-title:hover {
+    color: #3eb3c7;
+  }
+  .content__right__list__item-title::after {
+    border-bottom: solid #3eb3c7 2px;
+    content: "";
+    display: block;
+    padding-top: 7px;
+    transition: 0.2s;
+    height: 0px;
+    width: 0;
+  }
+  .content__right__list__item-title:hover::after {
+    width: 100%;
+  }
+  .content__right__list__item-body {
+    color: #222222;
+    font-family: "Railway", sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    line-height: initial;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    right: 0;
+    top: 130px;
+    width: 50%;
+  }
+  .content__right__list__item-title:hover + .content__right__list__item-body {
+    right: -10px;
+    opacity: 1;
+    transition: 0.7s;
   }
 }
 .footer {
@@ -132,11 +246,11 @@
   font-size: 20px;
   letter-spacing: 1px;
   margin: 35px 0;
-  padding: 10px;
+  padding: 5px;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1100px) {
   .footer__nav {
     margin-left: auto;
   }
@@ -155,6 +269,53 @@
   .footer__nav__item:hover::after {
     width: 100%;
   }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.hero__title {
+  color: #e4e3e3;
+  font-family: "Crimson Text", serif;
+  font-size: 25px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  position: absolute;
+  padding: 10px 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+}
+
+.hero--index {
+  background-image: url(../pictures/hero-background.jpg);
+}
+
+@media screen and (min-width: 1100px) {
+  .hero {
+    height: 750px;
+    margin-top: 50px;
+  }
+  .hero__title {
+    font-size: 50px;
+    height: 50px;
+  }
+}
+.main {
+  max-width: 1100px;
 }
 
 /*# sourceMappingURL=styles.css.map */

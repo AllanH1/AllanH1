@@ -1,11 +1,14 @@
 // ==================
 // media queries
 // ==================
-$desktop: 1025px;
+$desktop: 1100px;
 
 // ==================
 // colors
 // ==================
+
+$clear: rgba(0, 0, 0, 0);
+
 $black_very-light-opacity: rgba(0, 0, 0, 0.9);
 
 $light-grey: rgb(228, 227, 227);
@@ -18,10 +21,21 @@ $blue: rgb(62, 179, 199);
 
 $white: rgb(255, 255, 255);
 
-$very_light_steelblue_heavy-opacity: rgba(176, 196, 222, 0.4);
+$very-light_steelblue_heavy-opacity: rgba(176, 196, 222, 0.4);
 
 // usage
 // ==================
+
+// text
+$title_light-grey: $light-grey;
+
+$h1-background: linear-gradient($clear, $black_very-light_opacity);
+
+$title_dark-grey: $dark-grey;
+
+$body_light-grey: $light-grey;
+
+$body_dark-grey: $dark-grey;
 
 // nav
 $nav_background_mobile: $black_very-light-opacity;
@@ -41,20 +55,33 @@ $footer_text_color: $light-grey;
 
 $footer_link_hover: $blue;
 
-// border
+// borders
 $border_blue: $blue;
 
 $border_grey: $grey;
+
+$border_dark-grey: $dark-grey;
+
+// buttons
+
+$button_dark-grey: $dark-grey;
+
+$button_blue: $blue;
 
 // ==================
 // fonts
 // ==================
 $sans-serif: "Railway", sans-serif;
 
-$serif: serif;
+$serif: "Crimson Text", serif;
 
 // usage
 // ==================
+
+// text
+$title-font: $serif;
+
+$body-font: $sans-serif;
 
 // nav
 $nav_font: $sans-serif;
