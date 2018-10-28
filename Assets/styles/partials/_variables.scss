@@ -17,7 +17,11 @@ $grey: rgb(128, 128, 128);
 
 $dark-grey: rgb(34, 34, 34);
 
+$very-light-grey: rgba(176, 196, 222, 0.6);
+
 $blue: rgb(62, 179, 199);
+
+$dark-blue: rgb(0, 141, 163);
 
 $white: rgb(255, 255, 255);
 
@@ -28,6 +32,8 @@ $very-light_steelblue_heavy-opacity: rgba(176, 196, 222, 0.4);
 
 // text
 $title_light-grey: $light-grey;
+
+$title_dark-blue: $dark-blue;
 
 $h1-background: linear-gradient($clear, $black_very-light_opacity);
 
@@ -61,6 +67,8 @@ $border_blue: $blue;
 $border_grey: $grey;
 
 $border_dark-grey: $dark-grey;
+
+$border_very-light-grey: $very-light-grey;
 
 // buttons
 

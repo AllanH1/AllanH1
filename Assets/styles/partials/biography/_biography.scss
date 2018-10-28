@@ -1,0 +1,30 @@
+.biography {
+  text-align: center;
+  &__title {
+    @include h2_text;
+    @include center;
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  &__title::after {
+    @include bar_bottom;
+    @include bar_bottom--very-light-grey;
+    margin: 20px 0;
+  }
+
+  &__subtitle {
+    @include h3_text;
+    @include center;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  &__body {
+    @include body_text;
+    @include center;
+    margin-bottom: 30px;
+    text-align: justify;
+    width: 80%;
+  }
+}

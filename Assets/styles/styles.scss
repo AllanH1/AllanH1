@@ -3,6 +3,7 @@
 @import "./partials/variables";
 @import "./partials/nav";
 @import "./partials/index/index";
+@import "./partials/biography/biography";
 @import "./partials/footer";
 
 a {
@@ -12,6 +13,7 @@ a {
 
 .main {
   @include center;
+  max-width: 900px;
 }
 
 .hero {
@@ -30,6 +32,11 @@ a {
 
 .hero--index {
   background-image: url(../pictures/hero-background.jpg);
+}
+
+.hero--biography {
+  background-image: url(../pictures/bioHero.jpeg);
+  background-position: bottom;
 }
 
 @media screen and (min-width: $desktop) {

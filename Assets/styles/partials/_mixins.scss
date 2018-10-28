@@ -9,28 +9,32 @@
 // ==================
 // ::after
 // ==================
-@mixin bar_bottom_blue {
+
+@mixin bar_bottom {
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+}
+
+@mixin bar_bottom--blue {
   border-bottom: solid $border_blue 2px;
-  content: "";
-  display: block;
-  padding-top: 7px;
-  transition: 0.2s;
 }
 
-@mixin bar_bottom_grey {
+@mixin bar_bottom--grey {
   border-bottom: solid $border_grey 2px;
-  content: "";
-  display: block;
-  padding-top: 7px;
-  transition: 0.2s;
 }
 
-@mixin bar_bottom_blue--closed {
+@mixin bar_bottom--very-light-grey {
+  border-bottom: solid $border_very-light-grey 2px;
+}
+
+@mixin bar_bottom--closed {
   height: 0px;
   width: 0;
 }
 
-@mixin bar_bottom_blue--opened {
+@mixin bar_bottom--opened {
   width: 100%;
 }
 
@@ -69,6 +73,12 @@
 
 @mixin h2_text {
   color: $title_dark-grey;
+  font-family: $title-font;
+  font-size: 35px;
+}
+
+@mixin h3_text {
+  color: $dark-blue;
   font-family: $title-font;
   font-size: 35px;
 }

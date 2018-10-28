@@ -27,8 +27,9 @@
       margin-left: auto;
 
       &__item::after {
-        @include bar_bottom_blue--closed;
-        @include bar_bottom_blue;
+        @include bar_bottom;
+        @include bar_bottom--blue;
+        @include bar_bottom--closed;
       }
 
       &__item:hover {
@@ -36,7 +37,7 @@
       }
 
       &__item:hover::after {
-        @include bar_bottom_blue--opened;
+        @include bar_bottom--opened;
       }
     }
   }

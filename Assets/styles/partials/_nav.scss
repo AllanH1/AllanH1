@@ -28,7 +28,8 @@
     }
 
     &__item::after {
-      @include bar_bottom_grey;
+      @include bar_bottom;
+      @include bar_bottom--grey;
       @include center;
       margin-top: 15px;
       max-width: 30%;
@@ -105,15 +106,16 @@
       }
 
       &__item::after {
-        @include bar_bottom_blue;
-        @include bar_bottom_blue--closed;
+        @include bar_bottom;
+        @include bar_bottom--blue;
+        @include bar_bottom--closed;
         margin-top: 0px;
         max-width: 100%;
         min-width: 0px;
       }
 
       &__item:hover::after {
-        @include bar_bottom_blue--opened;
+        @include bar_bottom--opened;
       }
     }
   }

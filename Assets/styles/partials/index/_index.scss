@@ -6,7 +6,8 @@
   }
 
   &__title::after {
-    @include bar_bottom_blue;
+    @include bar_bottom;
+    @include bar_bottom--very-light-grey;
     @include center;
     margin-top: 20px;
     width: 50%;
@@ -77,12 +78,15 @@
       }
 
       &__item-title::after {
-        @include bar-bottom-blue;
-        @include bar-bottom-blue--closed;
+        @include bar-bottom;
+        @include bar-bottom--blue;
+        @include bar-bottom--closed;
       }
 
       &__item-title:hover::after {
-        @include bar-bottom-blue--opened;
+        @include bar-bottom;
+        @include bar-bottom--blue;
+        @include bar-bottom--opened;
       }
 
       &__item-body {
