@@ -61,27 +61,27 @@
       width: 100%;
 
       &__item--github {
-        background: url(../pictures/GitHubMark.png), #e3e9f5;
+        background: url(../pictures/GitHubMark.png), $very-light-steelblue;
       }
 
       &__item--codepen {
-        background: url(../pictures/codepenLogo.png) #e3e9f5;
+        background: url(../pictures/codepenLogo.png) $very-light-steelblue;
         background-size: 50%;
       }
 
       &__item {
         background-position: center 10px;
         background-repeat: no-repeat;
-        border: solid 2px #e3e9f5;
+        border: solid 2px $very-light-steelblue;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        color: white;
+        color: $white;
         height: 150px;
         margin: 0 10px 30px 10px;
         padding: 10px;
         transition: 0.2s;
         width: 230px;
         &__link {
-          color: $dark-grey;
+          color: $body_dark-grey;
           display: block;
           font-family: $body-font;
           padding-top: 140px;
