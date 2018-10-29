@@ -53,31 +53,33 @@
         </nav>
     </header>
 
-    <h1>Get in Contact with me</h1>
-    <fieldset class="container">
-        <legend>Submit a request</legend>
-        <form method="GET">
+    <main class="main contact">
+        <h1 class="contact__title">Get in Contact with me</h1>
+        <fieldset class="contact__container">
+            <legend class="contact__container__title">Submit a request</legend>
+            <form class="contact__container__form" method="GET">
 
-            <label for="fName">First Name (Required)</label>
-            <input type="text" id="fName" name="firstname" required>
-            <label for="lName">Last Name (Required)</label>
-            <input type="text" id="lName" name="lastname" required>
-            <label for="email">Email (Required)</label>
-            <input type="Email" id="email" name="email" required>
-            <label for="cName">Company Name (Optional)</label>
-            <input type="text" id="cName" name="cName">
-            <label for="questions">What can I do for you? (Required)</label>
-            <textarea id="questions" name="questions" rows="5" cols="40" required></textarea>
-            <input type="submit" value="send" id="submit">
+                <label class="contact__container__form__label" for="fName">First Name (Required)</label>
+                <input class="contact__container__form__input" type="text" id="fName" name="firstname" required>
+                <label class="contact__container__form__label" for="lName">Last Name (Required)</label>
+                <input class="contact__container__form__input" type="text" id="lName" name="lastname" required>
+                <label class="contact__container__form__label" for="email">Email (Required)</label>
+                <input class="contact__container__form__input" type="Email" id="email" name="email" required>
+                <label class="contact__container__form__label" for="cName">Company Name (Optional)</label>
+                <input class="contact__container__form__input" type="text" id="cName" name="cName">
+                <label class="contact__container__form__label" for="questions">What can I do for you? (Required)</label>
+                <textarea class="contact__container__form__input" id="questions" name="questions" rows="5" cols="40" required></textarea>
+                <input class="contact__container__form__submit" type="submit" value="send" id="submit">
 
-        </form>
-    </fieldset>
+            </form>
+        </fieldset>
 
-    <section>
-        <h2>Or send me an Email at:</h2>
-        <p>Allanraf@live.com</p>
-        <p>Thank you, and I'll attempt to get back to you as quicky as possible</p>
-    </section>
+        <section class="contact__email-section">
+            <h2 class="contact__email-section__title">Or send me an Email at:</h2>
+            <p class="contact__email-section__body">Allanraf@live.com</p>
+            <p class="contact__email-section__body">Thank you, and I'll attempt to get back to you as quicky as possible</p>
+        </section>
+    </main>
 
     <footer class="footer">
         <ul class="footer__nav">

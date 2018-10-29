@@ -1,0 +1,112 @@
+.contact {
+  padding-top: 50px;
+
+  &__title {
+    @include center;
+    color: $dark-grey;
+    font-family: $title-font;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70%;
+  }
+
+  &__title::after {
+    @include bar_bottom;
+    @include bar_bottom--very-light-grey;
+    margin: 30px auto;
+  }
+
+  &__container {
+    &__title {
+      color: $title_dark-grey;
+      font-family: $body_font;
+      font-size: 25px;
+      text-align: center;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    &__form {
+      background-color: $very-light-steelblue;
+      padding: 30px 0;
+      text-align: center;
+
+      &__input {
+        border: none;
+        box-shadow: 5px 5px 5px $black_heavy-opacity;
+        margin-bottom: 8%;
+        opacity: 0.8;
+        padding: 5px;
+        transition: 0.2s;
+        width: 70%;
+      }
+
+      &__input::placeholder {
+        color: $dark-grey;
+        font-size: 15px;
+      }
+
+      &__label {
+        display: block;
+        font-size: 20px;
+        margin: 15px 15px 10px 78px;
+        text-align: left;
+      }
+
+      &__submit {
+        @include button_dark-blue--add;
+        margin: 0 auto 20px auto;
+        display: block;
+        padding: 10px 50px;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      &__submit:hover {
+        background-color: $white;
+        color: $dark-blue;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &__email-section {
+    @include center;
+    text-align: center;
+    color: $dark-grey;
+    font-family: $body_font;
+    width: 80%;
+
+    &__title {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+
+    &__body {
+      margin-top: 20px;
+    }
+  }
+}
+
+// is applied via javascript when user leaves fields blank
+.error {
+  border: solid 2px $error;
+}
+
+@media screen and (min-width: $desktop) {
+  .contact {
+    padding-top: 80px;
+
+    &__container {
+      @include center;
+      max-width: 50%;
+
+      &__form {
+        &__label {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

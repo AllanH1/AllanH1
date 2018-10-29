@@ -1,4 +1,4 @@
-// @import "./partials/reset";
+@import "./partials/reset";
 @import "./partials/mixins";
 @import "./partials/variables";
 @import "./partials/nav";
@@ -7,6 +7,7 @@
 @import "./partials/resume/resume";
 @import "./partials/projects/projects";
 @import "./partials/gallery/gallery";
+@import "./partials/contact/contact";
 @import "./partials/footer";
 
 a {
