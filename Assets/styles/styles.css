@@ -277,6 +277,195 @@
     margin: 50px 0;
   }
 }
+.resume {
+  padding: 30px 30px 0px 30px;
+}
+.resume__title {
+  font-family: "Crimson Text", serif;
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.resume__section__title {
+  color: #008da3;
+  font-family: "Crimson Text", serif;
+  font-size: 25px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.resume__section__subtitle {
+  color: #222222;
+  font-family: "Crimson Text", serif;
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+.resume__section__job {
+  color: #008da3;
+  font-family: "Crimson Text", serif;
+  font-size: 35px;
+  padding-bottom: 30px;
+}
+.resume__section__time {
+  font-size: 15px;
+  font-family: "Railway", sans-serif;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.resume__section__list {
+  font-family: "Railway", sans-serif;
+  line-height: 25px;
+  list-style: initial;
+  margin-left: 10%;
+}
+.resume__section__list__item {
+  margin: 25px 0;
+}
+.resume__section--skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 300px;
+  max-width: 500px;
+}
+.resume__section::after {
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+  border-bottom: solid rgba(176, 196, 222, 0.6) 2px;
+  margin: 30px auto;
+  width: 80%;
+}
+
+@media screen and (min-width: 1100px) {
+  .resume {
+    padding-top: 80px;
+  }
+  .resume__section::after {
+    margin-left: 0px;
+  }
+}
+.projects {
+  padding: 30px 30px 0px 30px;
+  text-align: center;
+}
+.projects__title {
+  font-family: "Crimson Text", serif;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.projects__desc {
+  font-family: "Railway", sans-serif;
+  margin-top: 20px;
+}
+.projects__section__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.projects__section__wrapper__title {
+  font-family: "Railway", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  width: 230px;
+}
+.projects__section__wrapper__button {
+  color: white;
+  background-color: #008da3;
+  border: solid 1px #008da3;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 15px;
+  transition: 0.2s;
+  margin: 15px 0;
+  text-transform: uppercase;
+  width: 150px;
+}
+.projects__section__wrapper__button:hover {
+  background-color: white;
+  color: #008da3;
+  border-radius: 5px;
+}
+.projects__section__subtitle {
+  font-family: "Railway", sans-serif;
+  font-size: 30px;
+  color: #008da3;
+  text-transform: uppercase;
+  margin: 20px 0 40px 0;
+}
+.projects__section__items-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto 40px auto;
+  width: 100%;
+}
+.projects__section__items-wrapper__item--github {
+  background: url(../pictures/GitHubMark.png), #e3e9f5;
+}
+.projects__section__items-wrapper__item--codepen {
+  background: url(../pictures/codepenLogo.png) #e3e9f5;
+  background-size: 50%;
+}
+.projects__section__items-wrapper__item {
+  background-position: center 10px;
+  background-repeat: no-repeat;
+  border: solid 2px #e3e9f5;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  height: 150px;
+  margin: 0 10px 30px 10px;
+  padding: 10px;
+  transition: 0.2s;
+  width: 230px;
+}
+.projects__section__items-wrapper__item__link {
+  color: #222222;
+  display: block;
+  font-family: "Railway", sans-serif;
+  padding-top: 140px;
+  text-transform: capitalize;
+}
+.projects__section__items-wrapper__item:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+.projects__section::before {
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+  border-bottom: solid rgba(176, 196, 222, 0.6) 2px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+@media screen and (min-width: 1100px) {
+  .projects {
+    padding-top: 80px;
+  }
+}
+.gallery__title {
+  font-family: "Crimson Text", serif;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.gallery__title::after {
+  content: "";
+  display: block;
+  padding-top: 7px;
+  transition: 0.2s;
+  border-bottom: solid rgba(176, 196, 222, 0.6) 2px;
+  margin: 20px auto;
+}
+@media screen and (min-width: 1100px) {
+  .gallery {
+    padding-top: 80px;
+  }
+}
 .footer {
   background-color: #222222;
   color: #e4e3e3;

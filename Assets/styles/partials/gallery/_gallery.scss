@@ -1,0 +1,32 @@
+.gallery {
+  &__title {
+    font-family: $title-font;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+  &__title::after {
+    @include bar_bottom;
+    @include bar_bottom--very-light-grey;
+    margin: 20px auto;
+  }
+
+  &__subtitle {
+  }
+
+  &__container {
+    &__item {
+      &__img {
+      }
+
+      &__caption {
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .gallery {
+    padding-top: 80px;
+  }
+}
